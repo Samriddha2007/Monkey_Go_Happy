@@ -30,7 +30,7 @@ function preload()
 
 function setup()
 {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   
   var  PLAY = 1;
   var  END  = 0; 
