@@ -78,9 +78,10 @@ function draw()
    
     monkey.collide(invisibleGround);
   
-    if(keyDown("space")&&monkey.y >= 440)
+    if(touches.length > 0 || keyDown("space")&& monkey.y >= 440)
     {
      monkey.velocityY = -15; 
+     touches = [];
     } 
   
      backgrounds.velocityX = -10;
